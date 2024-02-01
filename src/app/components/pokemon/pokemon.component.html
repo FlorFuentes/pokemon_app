@@ -1,0 +1,13 @@
+<div class="card-container">
+    <div *ngFor="let pokemon of pokemons" class="card mb-3 " style="width: 18rem;"
+        (click)="viewPokemonDetails(pokemon.id)">
+        <div class="pokemon-img">
+            <img [src]="pokemon.imgUrl" class="card-img-top" alt="{{pokemon.name}}">
+        </div>
+        <div class="card-body">
+            <h5 class="card-title text-center">{{pokemon.name}}</h5>
+            <a [routerLink]="['/pokemon', pokemon.id]" class="btn btn-primary">Ver detalles</a>
+        </div>
+
+    </div>
+</div>

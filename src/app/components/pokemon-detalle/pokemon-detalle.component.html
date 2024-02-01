@@ -1,0 +1,9 @@
+<div *ngIf="pokemon" class="card text-center  d-flex align-items-cente pokemon-detalle">
+    <div class="card-body">
+        <h2 class="card-title">{{pokemon.name}}</h2>
+        <img [src]="pokemon.imgUrl" class="card-img-top pokemon-img" alt="Imagen de {{pokemon.name}}">
+        <p class="card-text">Numero: {{pokemon.number}}</p>
+        <p class="card-text">Peso: {{pokemon.weight}}</p>
+        <p class="card-text">Altura: {{pokemon.height}}</p>
+    </div>
+</div>
